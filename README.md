@@ -1,6 +1,6 @@
 # python-calc
 
-Implementation of Physics formulas and user interface for [NumWorks calculator](https://www.numworks.com/).
+Implementation of Physics formulas and a convenient user interface for [NumWorks calculator](https://www.numworks.com/).
 
 This project was motivated by the need to quickly perform redundant calculations
 of Heat and Mass transfer problems when solving them with paper, a pen and a calculator.
@@ -8,17 +8,18 @@ In particular, the background theory is based on EPFL course [ME-341](https://ed
 For theoretical details, refer to *Fundamentals of heat and mass transfer. 6th ed, Frank P. Incropera.*
 
 For instance, the [Churchill-Bernstein equation](https://en.wikipedia.org/wiki/Churchill%E2%80%93Bernstein_equation) 
-for convective heat transfer is used to approximate the dimensionless Nusselt number and thus estimate the 
+for convective heat transfer is used to approximate the dimensionless Nusselt number and thus estimate the average
 convection coefficient between two fluids in cross-flow around a cylinder. The formula is quiet cumbersome to type in a calculator:
-is quiet cumbersome to type in a calculator:
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\overline{&space;\text{Nu}}_D&space;=&space;0.3&space;&plus;&space;\frac{0.62&space;\,&space;\text{Re}_D^\frac{1}{2}&space;\,&space;\text{Pr}^\frac{1}{3}&space;}&space;{&space;\left[1&space;&plus;&space;(0.4/\text{Pr})^\frac{2}{3})&space;\right]^\frac{1}{4}&space;}&space;\left[&space;1&space;&plus;&space;\left(\frac{Re_D}{282000}&space;\right)^\frac{5}{8}&space;\right]&space;^\frac{4}{5}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\overline{&space;\text{Nu}}_D&space;=&space;0.3&space;&plus;&space;\frac{0.62&space;\,&space;\text{Re}_D^\frac{1}{2}&space;\,&space;\text{Pr}^\frac{1}{3}&space;}&space;{&space;\left[1&space;&plus;&space;(0.4/\text{Pr})^\frac{2}{3})&space;\right]^\frac{1}{4}&space;}&space;\left[&space;1&space;&plus;&space;\left(\frac{Re_D}{282000}&space;\right)^\frac{5}{8}&space;\right]&space;^\frac{4}{5}" title="\overline{ \text{Nu}}_D = 0.3 + \frac{0.62 \, \text{Re}_D^\frac{1}{2} \, \text{Pr}^\frac{1}{3} } { \left[1 + (0.4/\text{Pr})^\frac{2}{3}) \right]^\frac{1}{4} } \left[ 1 + \left(\frac{Re_D}{282000} \right)^\frac{5}{8} \right] ^\frac{4}{5}" /></a>
 
 where <a href="https://www.codecogs.com/eqnedit.php?latex=\text{Nu}_D" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\text{Nu}_D" title="\text{Nu}_D" /></a>
  is the Nusselt number, <a href="https://www.codecogs.com/eqnedit.php?latex=\text{Re}_D" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\text{Re}_D" title="\text{Re}_D" /></a>
   the Reynolds number and <a href="https://www.codecogs.com/eqnedit.php?latex=\text{Pr}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\text{Pr}" title="\text{Pr}" /></a>
-  the Prandtl number. Designing a script running in the Numworks environment and that prompts the user for input variables
-  would make the calculation of such formulas easy. 
+  the Prandtl number. 
+  
+Designing a script running in the Numworks environment and that prompts the user for input variables
+would make the calculation of such formulas easy. 
 
 ## Design
 
