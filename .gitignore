@@ -6,3 +6,7 @@
 # Python
 __pycache__
 
+
+# PyCharm
+.idea
+
